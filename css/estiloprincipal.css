@@ -14,19 +14,35 @@ p{
 
 
 header{
-    text-align: center;
+   
     font-size: 29px;
     background-color:#f993d2;
     height: 120px;
     width: 100%;
+    border-radius: 15px;
 }
+header h1{
+
+    text-align: center;
+    margin: 0;
+    
+}
+
 body{
     font-size: 15px;
     padding: 10px;
 }
 
 nav{
+    position: relative;
+    top: 0;
     background-color: rgb(255, 105, 130);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+   
+
 }
 nav a{
     display: inline-block;
@@ -41,8 +57,8 @@ nav a{
     transition: all 0.3s ease;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
-nav a :hover{
-    background-color: #ff9671;
+nav a:hover{
+    background-color: #e98db3;
     transform: scale(1.05);
     box-shadow: 3px 3px 8px rgba(0,0,0,0.4);
 
@@ -53,16 +69,16 @@ nav ul{
     display: flex;
     justify-content: center;
     gap: 20px;
-    background-color: #ff6f91;
     margin: 10px 0;
 }
 nav li{
     display: inline;
+  
 }
 nav ul li{
+    justify-content: space-around;
+    align-items: center;
     display: inline;
-    width: 200px;
-    height: 30px;
     margin:10px;
     padding: 5px;
 }
@@ -72,23 +88,68 @@ div{
 
 footer{
   
-    color: white;
     text-align: center;
     padding: 0,1px;
     margin-top: 0,1px;
 }
 main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 50px;
     font-size: 18px;
 }
+main p{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid;
+    margin: 20px;
+    padding: 10px;
+}
+main img{
+    display: flex;
+    justify-content: center
+    align-items: center;
+}
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
     
-h1,h2,h3{
+h1{
  font-family: 'Luckiest Guy', cursive;
  color: #b30059;
- text-shadow: 2px 2px 4px #00000055;
+ text-shadow: 2px 2px 4px white;
+ justify-content: center;
+ align-items: center;
+  
 }
 body,p,li,a{
  font-family: 'Poppins', sans-serif;
  
+}
+.parrafoprueba{
+    border-radius: 20px;
+    border: 2px solid;
+    margin: 20px;
+    padding: 10px;
+}
+.personajes{
+    background-color: #CD93F9;
+    margin: 20px;
+    padding: 10px;
+}
+.centrartexto{
+    justify-content: center;
+    align-items: center;
+}
+.centrarimagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.moverformulario{
+    display: flex;
+    margin-left: 50px;
+    
 }
