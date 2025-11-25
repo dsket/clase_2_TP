@@ -1,28 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+:root{
+    --bg: #CD93F9;
+    --pink-1:#f993d2;
+    --pink-2:#ff6f91;
+    --pink-3:#e98db3;
+    --text:#111;
+    --white:#fff;
+    --shadow: 0 2px 6px rgba(0,0,0,.15);
+  }
 body{
-    background-color: #CD93F9;    ;
+    background-color: #CD93F9;
+    min-height:100%;
+    font-family: sans-serif;
 }
 
 a{
     color: black;
 }
-p{
-    font-family: sans-serif;
-    font-size: 24px;
+p[class="parrafoprueba"]{
+   
+    font-size: 20px;
     color: black;
 }
 
-
-
 header{
    
-    font-size: 29px;
-    background-color:#f993d2;
-    height: 120px;
-    width: 100%;
+    font-size: 29px; 
+    background-color:#f993d2; 
+    height: 120px; 
+    width: 100%; 
     border-radius: 15px;
+    
 }
 header h1{
-
+    font-family: 'luckiest guy', cursive;
+    color: #b30059;
     text-align: center;
     margin: 0;
     
@@ -93,11 +106,13 @@ footer{
     margin-top: 0,1px;
 }
 main{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 0px;
+    margin-top: 20px;
     font-size: 18px;
 }
 main p{
@@ -105,16 +120,22 @@ main p{
     justify-content: center;
     text-align: center;
     border-radius: 20px;
-    border: 2px solid;
+   
     margin: 20px;
-    padding: 10px;
+    padding: 0px;
+}
+
+img{
+    max-width: 90%;
+    height: auto;
 }
 main img{
     display: flex;
     justify-content: center
     align-items: center;
+    padding: 0px;
 }
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
     
 h1{
  font-family: 'Luckiest Guy', cursive;
@@ -126,18 +147,20 @@ h1{
 }
 body,p,li,a{
  font-family: 'Poppins', sans-serif;
- 
 }
 .parrafoprueba{
     border-radius: 20px;
-    border: 2px solid;
+    
     margin: 20px;
     padding: 10px;
 }
 .personajes{
-    background-color: #CD93F9;
+   justify-content: center;
     margin: 20px;
     padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .centrartexto{
     justify-content: center;
@@ -151,5 +174,27 @@ body,p,li,a{
 .moverformulario{
     display: flex;
     margin-left: 50px;
+    
+}
+html{height: 100%;}
+*{ margin: 0;
+    box-sizing: border-box;
+
+}
+div.personajes{
+    flex: 1 1 150px;
+    width: 90%;
+    max-width: 200%;
+    margin: 0 auto;
+    gap: 20px;
+    display: inline-flex;
+    margin-top: 50px;
+
+}
+@media (max-width: 600px){ /*como maximo 600px*/
+        nav ul{
+            flex-direction: column;
+            gap: 10px;
+        }
     
 }
