@@ -26,11 +26,17 @@ p[class="parrafoprueba"]{
 
 header{
    
-    font-size: 29px; 
+    
     background-color:#f993d2; 
-    height: 120px; 
+    padding: 20px;
+    height: auto;
     width: 100%; 
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
     
 }
 header h1{
@@ -44,6 +50,7 @@ header h1{
 body{
     font-size: 15px;
     padding: 10px;
+    
 }
 
 nav{
@@ -131,7 +138,7 @@ img{
 }
 main img{
     display: flex;
-    justify-content: center
+    justify-content: center;
     align-items: center;
     padding: 0px;
 }
@@ -196,5 +203,15 @@ div.personajes{
             flex-direction: column;
             gap: 10px;
         }
+        nav a{
+            width: 100%;
+        }
+        header h1{
+            flex: auto;
+        }
+        .parrafoprueba{
+            flex-direction: column;
+        }
+
     
 }
